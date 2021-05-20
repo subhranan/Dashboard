@@ -1,0 +1,122 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(99,91,240);
+    background: linear-gradient(90deg, rgba(99,91,240,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    background-image: url("internet-3116062_1920.jpg");
+    
+}
+.navbar {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial;
+    height: 750px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    border-radius: 18px;
+    border-width: 10px;
+    border-color: rgba(99,91,240,1);
+}
+.navbar a{
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    color: black;
+    text-decoration: none;   
+}
+.dropdown {
+    float: left;
+    overflow:  hidden;
+}
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(10, 8, 8);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin:0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: rgb(156, 65, 192);
+}
+.dropc
+{
+    display: none;
+    position: absolute;
+    background-color: rgb(233, 211, 247);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;   
+}
+.dropc a{
+    float: none;
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropc a:hover
+{
+    background-color:rgb(116, 102, 236);   
+}
+.dropdown:hover  .dropc
+{
+    display: block;
+}
+.card
+{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 100px;
+    grid-template-areas: "image" "text";
+    margin : 7px 7px 7px 7px;
+    font-family: Arial;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.9);
+    text-align: justify;
+}
+.cimage{
+    grid-area:image;
+    background: url("crop.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.cimage2{
+    grid-area:image;
+    background: url("timetable.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.cimage3{
+    grid-area:image;
+    background: url("leaderboard.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.cimag4{
+    grid-area:image;
+    background: url("hwp.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.ctext{
+    grid-area: text;
+    margin:25px;
+}
+.ctext .date{
+    color: rgb(36, 27, 116);
+    font-size: 13px;
+}
+
